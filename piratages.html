@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">CyberRDC</div>
+        <nav>
+            <a href="Index.html">Accueil</a>
+            <a href="Menaces.html">Menaces</a>
+            <a href="Conseils.html">Conseils</a>
+            <a href="Contacts.html">Contacts</a>
+            <a href="#" oneclick="toggleSearch()" title="Recherche"><i class="fas fa-search"></i></a>
+            <a href="#" title="Langue"><i class="fas fa-globe"></i></a>
+        </nav>
+    </header>
+
+    <main class="menace-page">
+        <section class="intro">
+            <h1> Piratage des comptes</h1>
+            <p>Protégez-vous contre les tentatives de piratages des vos comptes en ligne.</p>
+        
+            <h2>Définition :</h2>
+            <P>
+                Le piratage de compte consiste à accéder illegalement vos comptes personnels (whatsApp, Facebook, email, etc) 
+                pour usurper votre identité, diffuser des messages frauduleux ou voler vos données cela se produit souvent à cause de mots de passe faibles
+                ou fuites des données.
+            </P>
+        
+            <h2>Exemple local :</h2>
+            <p>Quelqu'un utilise votre compte Facebook pour envoyer des demandes d'argent à vos amis.</p>
+            <h2>Comment s'en protéger :</h2>
+            <p>
+                <ul>
+                    <li>Utilisez des mots de passe forts et differents.</li>
+                    <li>Activez la vérification en deux étapes.</li>
+                    <li>Ne partagez jamais vos identifiants.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="-pdf-download">
+            <h2>Télécharger la fiche de sensibilisation</h2>
+            <a href="phishing.pdf" download class="btn">Télécharger le PDF</a>
+        </section>
+
+        <section class="outils">
+            <h2>Outils gratuits recommandés</h2>
+            <ul>
+                <li><strong>Avast Antivirus</strong> - <a href="https://wwww.avast.com/fr-fr/free-antivirus-download" target="_blank">Télécharger</a></li>
+                <li><strong>Bitdefender Free</strong> - <a href="https://www.bitdefender.com/solutions/free.html" target="_blank">Télécharger</a></li>
+                <li><strong>ProtonVPN (gratuit)</strong> - <a href="https://protonvpn.com/free-vpn" target="_blank">Accéder</a></li>
+            </ul>
+        </section>
+
+        <section class="video">
+            <h2>Vidéo explicative</h2>
+            <div class="video-container">
+                <iframe width="1128" height="634" src="https://www.youtube.com/embed/Zn8OSTB6ekg" title="Sensibilisation Sécurité information : Piratage informatique, protégez votre entreprise" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <h2>Petit quiz</h2>
+            <p>Pourquoi les comptes sont-ils piratés ?</p>
+            <ul>
+                <li><button onclick="checkAnswers(false)">Par curiosité</button></li>
+                <li><button onclick="checkAnswers(false)">Pour vous aider</button></li>
+                <li><button onclick="checkAnswers(true)">Pour voler des informations personnelles</button></li>
+            </ul>
+            <p id="quiz-result"></p>
+        </section>
+    </main>
+
+    <script>
+        function checkAnswers(correct) {
+            const result = document.getElementById("quiz-result");
+            result.style.fontWeight = "bold";
+            result.innerText = correct ? "Bonne réponse !" : "Mauvaise réponse.";
+            result.style.color = correct ? "green" : "red";
+        }
+    </script>
+
+</body>
+</html>

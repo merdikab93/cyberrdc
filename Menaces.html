@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Menaces</title>
+</head>
+<body>
+    
+   <header>
+        <div class="logo">CyberRDC</div>
+        <nav>
+            <a href="Index.html">Accueil</a>
+            <a href="Menaces.html">Menaces</a>
+            <a href="Conseils.html">Conseils</a>
+            <a href="Contacts.html">Contacts</a>
+            <a href="#" oneclick="toggleSearch()" title="Recherche"><i class="fas fa-search"></i></a>
+            <a href="#" title="Langue"><i class="fas fa-globe"></i></a>
+        </nav>
+    </header>
+
+    <main class="Menaces-container">
+        <div class="section menaces">
+            <div class="banner2">
+                <h2>Les principales menaces</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="phishing.webp" alt="image" class="card_img">
+                    </div>
+                    <h3>Le phishing</h3>
+                    <a href="phishing.html">
+                        <button class="btn">Voir Plus</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="arnaquess.jpeg" alt="image" class="card_img">
+                    </div>
+                    <h3>Piratages des comptes</h3>
+                    <a href="piratages.html">
+                        <button class="btn">Voir plus</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="reseau.jpg" alt="image" class="card_img">
+                    </div>
+                    <h3>Arnaques sur réseaux sociaux</h3>
+                    <a href="arnaques.html">
+                        <button class="btn">Voir plus</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="malware-android-dangerous-common.jpg" alt="image" class="card_img">
+                    </div>
+                    <h3>Logiciels malveillants</h3>
+                    <a href="logiciels.html">
+                        <button class="btn">Voir Plus</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="wifi.jpeg" alt="image" class="card_img">
+                    </div>
+                    <h3>Faux réseaux Wi-Fi publics</h3>
+                    <a href="resau.html">
+                        <button class="btn">Voir plus</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+         <div  class="astuce-box">
+                <h2>Astuces du jour</h2>
+                <p id="astuce"></p>
+        </div>
+    </main>
+
+    <script>
+        const astuce =[
+            "Ne cliquez jamais sur un lien dans un e-mail suspect",
+            "Utilisez un mot de passe différent pour chaque site",
+            "Activez la double authentification partout ou c'est possible.",
+            "Evitez d'utiliser les Wi-Fi publics sans VPN.",
+            "Vérifier toujours l'URL d'un site avant de vous connecter."
+        ];
+        const randomAstuce = astuce[Math.floor(Math.random() * astuce.length)];
+        document.getElementById("astuce").innerText = randomAstuce;
+    </script>
+
+</body>
+</html>

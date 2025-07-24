@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>phishing</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CyberRDC</div>
+        <nav>
+            <a href="Index.html">Accueil</a>
+            <a href="Menaces.html">Menaces</a>
+            <a href="Conseils.html">Conseils</a>
+            <a href="Contacts.html">Contacts</a>
+            <a href="#" oneclick="toggleSearch()" title="Recherche"><i class="fas fa-search"></i></a>
+            <a href="#" title="Langue"><i class="fas fa-globe"></i></a>
+        </nav>
+    </header>
+
+    <main class="menace-page">
+        <section class="intro">
+            <h1>Le phishing (hameçonnage)</h1>
+            <p>Protégez-vous contre les tentatives de phishing</p>
+            <h2>Définition :</h2>
+            <p>
+                Le phishing est une technique utilisée par des cybercriminels pour tromper
+                une personne et lui faire révéler des informations sensibles (mot de passe, numéro
+                de carte bancaire, etc...). Cela passe souvent par des e-mails ou SMS imittant des services officiels.
+            </p>
+            <h2>Exemple local :</h2>
+            <p>
+                Un message whatsApp prétend que vous avez gagné un iphone ou 50go airtel, 
+                vous demande de cliquer sur un lien pour "confirmer" : si vous cliquer, vos données sont volées.
+            </p>
+            <h2>Comment s'en protéger :</h2>
+            <p>
+                <ul>
+                    <li>Ne cliquez jamais sur des liens suspects.</li>
+                    <li>Vérifier toujours la source du message.</li>
+                    <li>Activez la double authentification.</li>
+                </ul>
+            </p>
+        </section>
+        
+        <section class="-pdf-download">
+            <h2>Télécharger la fiche de sensibilisation</h2>
+            <a href="phishing.pdf" download class="btn">Télécharger le PDF</a>
+        </section>
+
+        <section class="outils">
+            <h2>Outils gratuits recommandés</h2>
+            <ul>
+                <li><strong>Avast Antivirus</strong> - <a href="https://wwww.avast.com/fr-fr/free-antivirus-download" target="_blank">Télécharger</a></li>
+                <li><strong>Bitdefender Free</strong> - <a href="https://www.bitdefender.com/solutions/free.html" target="_blank">Télécharger</a></li>
+                <li><strong>ProtonVPN (gratuit)</strong> - <a href="https://protonvpn.com/free-vpn" target="_blank">Accéder</a></li>
+            </ul>
+        </section>
+
+        <section class="video">
+            <h2>Vidéo explicative</h2>
+            <div class="video-container">
+                <iframe width="1128" height="634" src="https://www.youtube.com/embed/kREWBrQWQZo" title="Qu&#39;est-ce que le phishing ou hameçonnage ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+            </div>
+        </section>
+
+        <section class="quiz">
+            <h2>Petit quiz</h2>
+            <p>Quel est le principal but du phishing ?</p>
+            <ul>
+                <li><button onclick="checkAnswers(false)">Installer un jeu ?</button></li>
+                <li><button onclick="checkAnswers(true)">Voler vos informations personnelles</button></li>
+                <li><button onclick="checkAnswers(false)">Changer vos mots de passe automatiquement</button></li>
+            </ul>
+            <p id="quiz-result"></p>
+        </section>
+    </main>
+
+    <script>
+        function checkAnswers(correct) {
+            const result = document.getElementById("quiz-result");
+            result.style.fontWeight = "bold";
+            result.innerText = correct ? "Bonne réponse !" : "Mauvaise réponse.";
+            result.style.color = correct ? "green" : "red";
+        }
+    </script>
+
+</body>
+</html>

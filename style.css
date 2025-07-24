@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f9fc;
+    color: #1d3557;
+    line-height: 1.6;
+}
+header {
+    background-color: #1d3557;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #1d3557;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background: url(image1.jpeg) no-repeat center center/cover;
+    height: 500px;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 25px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    background-color: #e63946;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*menaces*/
+main.menace-page {
+    margin: auto;
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #1d3557;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.video {
+    max-width: 800px;
+    margin: 20px 30px;
+    padding: 20px 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a.btn:hover {
+    background-color: #457b9d;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.quiz ul li {
+    margin: 10px 0;
+}
+
+.quiz button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f1faee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.quiz button:hover {
+    background-color: #d9f0ea;
+}
+
+.astuce-box {
+    background-color: #fff0d5;
+    padding: 20px;
+    border-left: 5px solid #f4a261;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/*conseils*/
+.conseils-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.conseil {
+    background-color: white;
+    border-left: 5px solid #e63946;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.conseil h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.bannerc {
+    text-align: center;
+    color: #1d3557;
+}
+
+/*contact*/
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #1d3557;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form {
+   flex: 1 1 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #1d3557;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #457b9d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+}
+
+@media sreen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    nav {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin-bottom: 5px;
+    }
+
+    /*menaces*/
+    .menaces-container {
+        padding: 20px 10px;
+    }
+
+    .phishing h3 {
+        font-size: 18px;
+    }
+
+    /*conseils*/
+    .conseils-container {
+        padding: 20px 10px;
+    }
+
+    .conseil h2 {
+        font-size: 18px;
+    }
+
+    /*conatct*/
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+
+    .contact-section h1 {
+        font-size: 24px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+}

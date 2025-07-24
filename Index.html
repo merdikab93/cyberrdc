@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CyberRDC - Accueil</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">CyberRDC</div>
+        <nav>
+            <a href="Index.html">Accueil</a>
+            <a href="Menaces.html">Menaces</a>
+            <a href="Conseils.html">Conseils</a>
+            <a href="Contacts.html">Contacts</a>
+            <a href="#" oneclick="toggleSearch()" title="Recherche"><i class="fas fa-search"></i></a>
+            <a href="#" title="Langue"><i class="fas fa-globe"></i></a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>Protégez votre vie numérique</h1>
+        <p>CyberRDC vous guide contre les menaces en ligne</p>
+        <button class="btn" onclick="afficherIntro()">En savoir plus</button>
+    </div>
+
+    <div id="search-bar" style="display: none; padding: 10px;">
+        <input type="text" placeholder="Rechercher..." style="padding: 8px; width: 200px;">
+    </div>
+    <div class="section hidden" id="intro">
+        <h2>Pourquoi CyberRDC ?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3> Sensibiliser</h3>
+                <p>Apprenez les bases de la cybersécurité accessibles à tous.</p>
+            </div>
+            <div class="card">
+                <h3> Identifier les menaces</h3>
+                <p>Découvrez les attaques fréquentes en RDC (phishing, arnaques,...)</p>
+            </div>
+            <div class="card">
+                <h3> Se protéger</h3>
+                <p>Recevez des conseils pratiques pour sécuriser vos comptes.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function afficherIntro() {
+            document.getElementById('intro').classList.remove('hidden');
+        }
+
+        function toggleSearch() {
+            const bar = document.getElementById('search-bar');
+            bar.style.display = (bar.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+    
+</body>
+</html>
